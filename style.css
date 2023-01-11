@@ -112,10 +112,6 @@ button:hover {
   transform: scale(1.11);
 }
 
-button#equal {
-  height: 130px;
-}
-
 .calculator {
   background-color: var(--bg-calculator);
 }
