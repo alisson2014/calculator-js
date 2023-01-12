@@ -1,3 +1,5 @@
+//Optional file
+//Arquivo opcional com configurações para o vscode
 {
   // editor
   "editor.wordWrap": "on",
