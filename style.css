@@ -7,29 +7,29 @@
 }
 
 :root {
-  --bg: linear-gradient(to bottom right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165));
+  --bg: linear-gradient(to bottom right, rgb(173, 72, 60), rgb(229, 169, 101));
   --bg-calculator: #FFF;
-  --bg-btn-clear: #FFD5D8;
-  --bg-btn-number: #C3EAFF;
-  --bg-btn-operator: #FFD0FB;
-  --bg-btn-equal: #ADF9E7;
+  --bg-btn-clean: #EBB8BC;
+  --bg-btn-number: #97C7E0;
+  --bg-btn-operator: #EBBaE7;
+  --bg-btn-equal: #91E7D3;
   --color-display: #0A1E23;
-  --color-btn-clear: #FC4552;
+  --color-btn-clean: #EB3D49;
   --color-btn-number: #000;
-  --color-btn-operator: #F967F3;
+  --color-btn-operator: #D147CC;
 
 }
 
 .calculator.dark {
   --bg-calculator: #071115;
-  --bg-btn-clear: #2D191E;
-  --bg-btn-number: #1B2F38;
-  --bg-btn-operator: #2E1F39;
-  --bg-btn-equal: #223323;
+  --bg-btn-clean: #986371;
+  --bg-btn-number: #42697D;
+  --bg-btn-operator: #895FA3;
+  --bg-btn-equal: #406B43;
   --color-display: #F8FAFB;
-  --color-btn-clear: #BD3740;
-  --color-btn-operator: #AA00A4;
-  --color-btn-equal: #FFF;
+  --color-btn-clean: #D04A53;
+  --color-btn-operator: #EC98EA;
+  --color-btn-number: #FFF;
 }
 
 body {
@@ -120,9 +120,10 @@ button:hover {
   color: var(--color-display);
 }
 
-.calculator button#clear {
-  background-color: var(--bg-btn-clear);
-  color: var(--color-btn-clear);
+.calculator button#cleanDisplay,
+.calculator button#cleanCalc {
+  background-color: var(--bg-btn-clean);
+  color: var(--color-btn-clean);
 }
 
 .calculator button.btn-number {
