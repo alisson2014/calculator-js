@@ -15,7 +15,11 @@ const calc = () => {
     const currentNumber = parseFloat(display.textContent.replace(",", "."));
     newNumber = true;
     const result = eval(`${previousNumber}${operator}${currentNumber}`);
-    displayUpdate(result.toFixed(3));
+    if (Number.isInteger(result)) {
+      displayUpdate(parseInt(result))
+    } else {
+      displayUpdate(result.toFixed(3))
+    }
   }
 }
 
@@ -35,10 +39,10 @@ const selectOperator = (event) => {
   //Se for adicionao um novo numero execute o calculo
   if (!newNumber) {
     calc();
-    newNumber = true;
-    operator = event.target.textContent;
-    previousNumber = parseFloat(display.textContent.replace(",", "."));
   }
+  newNumber = true;
+  operator = event.target.textContent;
+  previousNumber = parseFloat(display.textContent.replace(",", "."));
 }
 
 //forEach para pegar vários dados
